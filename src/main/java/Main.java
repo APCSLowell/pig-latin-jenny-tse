@@ -23,7 +23,10 @@ if(sWord.length()>0){
 }
 
 public String pigLatin(String sWord)
-if(findFirstVowel(sWord)==1&&sWord.substring(0,1).equals("q")){
+//precondition: sWord is a valid String of length greater than 0
+//postcondition: returns the pig latin equivalent of sWord
+{
+	if(findFirstVowel(sWord)==1&&sWord.substring(0,1).equals("q")){
     return sWord.substring(2)+"quay";
   }
  if(findFirstVowel(sWord)==0){
